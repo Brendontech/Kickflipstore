@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --gap: 6rem;
+    --width: 70vh;
+    --heigt: 5vh;
+    --border: 1px  solid yellowgreen;
+
+}
+
+body {
+    background-image: url(../imagem/fundo1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.4rem;
+    height: 100%;
+
+}
+.main-bg{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+a {
+    text-decoration: none;
+}
+
+@keyframes escreverTexto {
+    from { width: 0; }
+    to { width: 43%; }
+}
+
+.texto-escrito {
+    overflow: hidden;
+    border-right: 1px solid #000; /* Pode ajustar o estilo da borda conforme necessário */
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    animation: escreverTexto 12s steps(65) infinite;
+}
+.aviso {
+    margin-top: 10vh;
+}
+legend{
+    font-family: 'Bungee Spice', sans-serif;
+}
+.input_colorido {
+    background-color: transparent;
+    border: var(--border);
+}
+input {
+    outline: none;
+    color: #a18383ee;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15vh;
+
+}
+label{
+    color: #a18383ee;
+    display: flex;
+}
+
+fieldset{
+    width: 100vh;
+    padding: 5vh;
+}
+.form-group {
+    padding: 1vh;
+}
+.form-group button{
+    width: 30vh;
+    padding: 2vh;
+    cursor: pointer;
+}
+#first-name, #last-name, #email, #senha {
+    width: 100vh;
+    height: 5vh;
+}
+.entrar a {
+    font-size: 1rem;
+    display: flex;
+    margin-left: 83%;
+
+}
+.entrar {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}

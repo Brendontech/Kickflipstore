@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-h1: #0a1128;
+    --gap: 3rem;
+    --background2: #ffff;
+}
+
+body {
+    height: 100%;
+    list-style: none;
+}
+
+.main-bg {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-h1);
+}
+
+.main-bg {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+h1 {
+    color: var(--color-h1);
+}
+
+.logo-txt a {
+    font-family: 'Bungee Spice', sans-serif;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logo-txt {
+    width: 0;
+    left: 0;
+    padding: 2rem;
+
+}
+
+.logo-txt h1 {
+    font-size: 2rem;
+
+}
+
+.opcoes {
+    border-bottom: 2px solid crimson;
+}
+
+.opcoes img {
+    height: 2.8rem;
+    width: 2.7rem;
+    margin-top: 6.5vh;
+    padding-left: 2vh;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+
+}
+
+.menu-content {
+    flex-flow: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 3rem;
+    font-size: 1.5rem;
+    color: var(--color-h1);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 2.7rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: crimson;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu button {
+    background-color: #93acffb6;
+    border: 0.2px solid #ffff;
+    margin-top: 6.6vh;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+button,
+a {
+    padding: 1rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#promo {
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    float: left;
+}
+
+#Promoções {
+    border-radius: 5rem;
+    width: 90%;
+}
+
+.text-promo {
+
+    width: 0 auto;
+    height: 60vh;
+}
+
+.text-promo h1 {
+    padding-top: 4rem;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    color: #ef6666ee;
+    font-size: 2.5rem;
+}
+
+.meia-lua {
+    margin: 0 auto;
+    margin-top: 20vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 23vh;
+    height: 23vh;
+    background: #3051ac;
+    border-radius: 0px;
+    box-shadow: 2.5rem 1rem 1rem 1rem rgb(197, 44, 44);
+}
+
+.meia-lua {
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 2.5rem 1rem 0rem 0rem #d06969ee;
+    display: flex;
+    align-items: center;
+}
+
+.meia-lua a {
+    font-size: 2rem;
+    color: #b85858ee;
+}
+
+button:hover {
+    background: rgb(62, 247, 11);
+    border: rgb(62, 247, 11);
+
+}
+
+.menu button:active {
+    background: rgb(62, 247, 11);
+    border: rgb(62, 247, 11);
+}
+
+
+.op {
+    max-width: 1200px;
+    display: flex;
+    gap: 7vh;
+    align-items: center;
+}
+
+.svg-inline--fa {
+    font-size: 36px;
+    cursor: pointer;
+    color: #849cf0;
+
+}
+
+.SetaComprarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BotaoComprar {
+    cursor: pointer;
+    border-radius: 6px;
+    border-color: rgb(53, 175, 114);
+    width: 40vh;
+    background-color: rgb(53, 175, 114);
+    margin-top: 5vh;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+.Bloco img {
+    width: 75vh;
+    height: 75vh;
+}
+
+#contador {
+    background-color: red;
+    color: #eeee;
+    padding: 0.4rem;
+    margin-left: 4.4rem;
+    border-radius: 50%;
+}
+
+#intens-carrinho {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-right: 5rem;
+}
+.texto-imagem {
+    padding: var(--gap);
+    font-family: 'Quicksand', sans-serif;
+}
+#texto2 {
+    padding-bottom: 2vh;
+    margin-top: 20vh;
+    font-size: 1.2rem;
+}
+del{
+    color: red;
+}
+fieldset{
+    margin-top: 1vh;
+    border: none;
+}
+legend {
+    margin-bottom: 1vh;
+}
+@media (max-width:800px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-txt{
+        width: 100%;
+    }
+    button, a{
+        justify-content: center;
+    }
+    #promo {
+        display:contents;
+    }
+    .Bloco img {
+        width: 45vh;
+        height: 45vh;
+    }
+    .meia-lua {
+        width: 15vh;
+        height: 15vh;
+    }
+    .meia-lua a{
+        margin-top: 2vh;
+        padding: 2vh;
+        font-size: 1.2rem;
+    }
+    #Promoções {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

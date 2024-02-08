@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masculino</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/masculino.css">
+</head>
+
+<body class="main-bg main-content">
+    <aside class="menu">
+        <section class=" main-content menu-content ">
+
+            <div class="logo-txt">
+                <a href="/index.html#">
+                    <h1> kickflip</h1>
+                    <h2>couture</h2>
+                </a>
+            </div>
+            <nav class="opcoes">
+                <ul>
+                    <li><a href="masculino.html">Masculino</a></li>
+                    <li><a href="feminino.html">Feminino</a></li>
+                    <li><a href="calçados.html">Calçados</a></li>
+                    <li><a href="acesórios.html">Acessórios</a></li>
+                    <button><a href="login.html">Entrar</a></button>
+                    <div id="carrinho">
+                        <a href="/assets/html/carrinho.html"><img src="/assets/imagem/carrinho-de-compras.png"></a>
+                        <span id="contador">0</span>
+                        <div id="itens-carrinho"></div>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+        <div class="spacing"></div>
+        <section id="camisetas">
+            <div id="opcoes">
+                <div class="op">
+                    <i class="fas fa-chevron-left icone-seta" onclick="voltarFoto()"></i>
+                    <div class="Bloco" id="blocoImagem">
+                        <img src="/assets/imagem/camista 1.jpeg" alt="">
+                    </div>
+                    <i class="fas fa-chevron-right icone-seta" onclick="trocarFoto()"></i>
+                </div>
+            </div>
+            <div id="opcao-camiseta">
+                <h2 id="texto2">
+                    Camiseta Maresia coleção Charlie Brown
+                </h2>
+                <h3 id="desconto"> de R$ <i><del> 109,90</del></i></h3>
+                <h3 id="valor">Por R$<i> 69,90</i></h3>
+                <form action="processar_pedido.php" method="post" required>
+                    <fieldset>
+                        <legend>Escolha o Tamanho:</legend>
+
+                        <label>
+                            <input type="checkbox" name="tamanho[]" value="P" required>
+                            P
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="tamanho[]" value="M">
+                            M
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="tamanho[]" value="G">
+                            G
+                        </label>
+
+                    </fieldset>
+                </form>
+                <button onclick="adicionarAoCarrinho('camista 1.1.jpeg')" class="BotaoComprar">Comprar</button>
+            </div>
+        </section>
+    </aside>
+
+</body>
+<script src="/assets/js/script.js"></script>
+</html>

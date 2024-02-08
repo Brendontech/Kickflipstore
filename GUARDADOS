@@ -1,0 +1,97 @@
+
+ <!-- Inclua a biblioteca FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+   
+   
+   <!-- <div id="Promoções">
+        <div class="op">
+            <div class="Bloco">
+                <img src="imagem/camista 1.1.jpeg" alt="Camiseta 1">
+                <button class="BotaoComprar">Comprar</button>
+            </div>
+            <i class="fas fa-chevron-right icone-seta" onclick="trocarFoto()"></i>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <script>
+
+        let fotoAtual = 0;
+
+        function trocarFoto() {
+            const bloco = document.querySelector(".Bloco");
+            const imagens = ["camista 1.jpeg", "short1.png", "9k17f4wh.png", "tzjeyb88.png"];
+            const novaFoto = imagens[fotoAtual % imagens.length];
+
+            bloco.innerHTML = `
+                <img src="imagem/${novaFoto}" alt="Imagem ${fotoAtual + 1}">
+                <button class="BotaoComprar">Comprar</button>
+            `;
+
+            fotoAtual++;
+        }
+    </script> -->
+
+<!-- CSS -->
+
+<!-- #Promoções {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.op {
+    margin-top: 30vh;
+    ;
+    max-width: 1200px;
+    display: flex;
+    gap: 7vh;
+    align-items: center;
+}
+
+.Bloco {
+    width: 100vh;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centralizar a imagem e o botão */
+    justify-content: space-between;
+    /* Espaçamento entre imagem e botão */
+}
+
+.svg-inline--fa {
+    font-size: 36px;
+    /* Aumenta o tamanho da seta */
+    cursor: pointer;
+}
+
+.BotaoComprar {
+    cursor: pointer;
+    border-radius: 6px;
+    border-color: rgb(53, 175, 114);
+    padding: 8px;
+    width: 30vh;
+    background-color: rgb(53, 175, 114);
+    margin-top: 5vh;
+    /* Move o botão para a parte inferior do bloco */
+}
+
+a {
+    font-size: medium;
+}
+
+.Bloco img {
+    width: 75vh;
+    height: 75vh;
+}
+
+.SetaComprarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} -->
